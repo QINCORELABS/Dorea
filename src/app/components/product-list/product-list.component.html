@@ -1,0 +1,73 @@
+<!-- Product Grid -->
+<div
+  class="grid grid-cols-2 gap-3 p-3 sm:grid-cols-3 lg:grid-cols-4 pb-28"
+  *ngIf="products && products.length > 0"
+>
+  <div
+    *ngFor="let product of products"
+    [ngClass]="isInCart(product.id) ? 'border-2 border-[#843A6B] shadow-md' : 'shadow-sm'"
+    class="bg-white rounded-xl hover:shadow-md transition-shadow overflow-hidden"
+  >
+    <!-- Image container -->
+    <div class="h-40 bg-gray-100 relative">
+      <img
+      [lazyLoad]="product.image"
+      [defaultImage]="'assets/images/loading.gif'"
+      [errorImage]="'assets/images/fallback.jpeg'"
+      [alt]="product.name"
+      class="w-full h-full object-cover rounded-t-xl" />
+    </div>
+
+    <!-- Product Info -->
+    <div class="p-2 flex flex-col justify-between">
+      <!-- Product Name -->
+      <div class="text-center mb-2">
+        <h3 class="text-base font-semibold text-black leading-tight sm:text-sm text-center line-clamp-2 min-h-[2.75rem] px-2 tracking-wide">
+          <span class="block capitalize">{{ product.name }}</span>
+        </h3>
+        
+      </div>
+
+      <!-- If Already in Cart -->
+      <ng-container *ngIf="isInCart(product.id); else addButton">
+        <div class="flex justify-between items-center">
+          <span
+            class="text-[#843A6B] text-sm leading-tight tracking-normal bg-[#fbeaf7] px-3 py-1 rounded-full font-bold"
+          >
+            ✔ Added
+          </span>
+          <button
+            (click)="removeFromCart(product.id)"
+            class="text-red-500 text-base hover:text-red-700 font-bold w-7 h-7 flex items-center justify-center rounded-full hover:bg-red-100 transition-colors"
+            title="Remove"
+          >
+            &times;
+          </button>
+        </div>
+      </ng-container>
+      
+      
+
+      <!-- Add to Cart Button -->
+      <ng-template #addButton>
+        <button
+          (click)="addToCart(product)"
+          class="w-full bg-[#843A6B] text-white py-2 px-4 rounded-md text-base font-semibold hover:bg-[#6b2f57] focus:outline-none focus:ring-2 focus:ring-[#a45b8f] transition-all"
+          style="font-family: 'Inter', sans-serif;"
+        >
+          + Add to Cart
+        </button>
+      </ng-template>
+      
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- Empty State -->
+<div *ngIf="!products || products.length === 0" class="text-center py-12">
+  <p class="text-gray-500 text-base">No products found</p>
+  <p class="text-gray-400 text-sm mt-1">Try adjusting your search or filters</p>
+</div>
+

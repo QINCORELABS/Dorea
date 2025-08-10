@@ -1,0 +1,14 @@
+
+<nav class="w-full bg-[#7a365f] shadow-md sticky top-0 z-50 flex items-center justify-between px-4 py-3">
+    <img src="assets/images/DOREA-LOGO.png" class="h-10" alt="Logo" />
+  
+    <input
+      *ngIf="context === 'event' || context === 'home'"
+      type="text"
+      [placeholder]="context === 'event' ? 'Search products...' : 'Search events...'"
+      (input)="handleInput($event)"
+      class="w-1/2 border rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#F7931E] focus:border-[#F7931E]"
+    />
+  </nav>
+  
+  

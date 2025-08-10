@@ -1,0 +1,37 @@
+<!-- Overlay -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-sm relative px-6 py-8 text-center space-y-6">
+  
+      <!-- Close Button -->
+      <button (click)="closeModal()" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl font-bold">
+        &times;
+      </button>
+  
+      <h2 class="text-xl font-semibold text-gray-800">Share This Page</h2>
+  
+      <div class="space-y-4">
+        <!-- WhatsApp -->
+        <button (click)="shareWhatsApp()" class="flex items-center justify-center w-full gap-3 bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 shadow">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-5 h-5 bg-white rounded-full p-0.5" alt="WhatsApp Logo" />
+          <span class="text-sm font-medium">Share on WhatsApp</span>
+        </button>
+  
+        <!-- Copy Link -->
+        <button (click)="copyLink()" class="flex items-center justify-center w-full gap-3 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="white">
+            <path d="M16 8a6 6 0 1 0-12 0 6 6 0 0 0 12 0zm2 1h-1.26a8 8 0 1 1-8.92 8.92V17a6 6 0 1 0 10.18-8z"/>
+          </svg>
+          <span class="text-sm font-medium">Copy Link</span>
+        </button>
+  
+        <!-- SMS -->
+        <button *ngIf="isMobile" (click)="sendSMS()" class="flex items-center justify-center w-full gap-3 bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600 shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" viewBox="0 0 24 24">
+            <path d="M2 3h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6l-4 4V4a1 1 0 0 1 1-1z"/>
+          </svg>
+          <span class="text-sm font-medium">Send via SMS</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,18 @@
+<div class="text-center text-3xl font-semibold my-6 text-[#843A6B] font-[Playfair Display] tracking-wide leading-snug">
+    {{ selectedEventName }}
+  </div>
+  
+  
+  <app-category-filter
+    [subcategories]="(subcategories$ | async) ?? []"
+    (categoryChange)="onCategoryChange($event)"
+    (subcategoryChange)="onSubcategoryChange($event)">
+  </app-category-filter>
+  
+    
+    <app-product-list
+      [products]="(products$ | async) ?? []"
+      [cartProductIds]="cartProductIds"
+      (productAddedToCart)="onProductAddedToCart($event)"
+      (productRemovedFromCart)="onProductRemovedFromCart($event)">
+    </app-product-list>

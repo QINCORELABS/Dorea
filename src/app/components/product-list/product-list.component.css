@@ -1,0 +1,5 @@
+.image-wrapper {
+    background: url('/assets/images/loading.gif') center center no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
