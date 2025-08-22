@@ -94,7 +94,7 @@ export const PRODUCT_LIST: Product[] = [
   { id: 79, name: 'Veg Hot and Sour Soup', image: 'assets/images/products-img/chsoup.jpg', category: 'Catering', subcategory: 'Soup' },
   // salad special
   { id: 80, name: 'Green Apple Honey Salad', image: 'assets/images/products-img/applesalad.jpeg', category: 'Catering', subcategory: 'Salads' },
-  { id: 81, name: 'Mothabella Salad', image: 'assets/images/products-img/Mothabella Salad.jpg', category: 'Catering', subcategory: 'Salads' },
+  { id: 81, name: 'Mothabella Salad', image: 'assets/images/products-img/MothabellaSalad.jpg', category: 'Catering', subcategory: 'Salads' },
   { id: 82, name: 'Green Salad', image: 'assets/images/products-img/greensalad.jpeg', category: 'Catering', subcategory: 'Salads' },
   { id: 83, name: 'Pasta Salad', image: 'assets/images/products-img/pastasalad.jpeg', category: 'Catering', subcategory: 'Salads' },
   { id: 84, name: 'Grilled Salad', image: 'assets/images/products-img/grilledsalad.jpg', category: 'Catering', subcategory: 'Salads' },
@@ -166,17 +166,17 @@ export const PRODUCT_LIST: Product[] = [
   { id: 141, name: 'Kichadi', image: 'assets/images/products-img/kichadi.jpg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 142, name: 'Madhura Kichadi', image: 'assets/images/products-img/madhurakichadi.jpg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 143, name: 'Theeyal', image: 'assets/images/products-img/theeyal.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
-  { id: 144, name: 'Pavakka Fry', image: 'assets/images/products-img/Screenshot (712).png', category: 'Catering', subcategory: 'Nadan Sadhya' },
+  { id: 144, name: 'Pavakka Fry', image: 'assets/images/products-img/PavakkaFry.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 145, name: 'Mizhukuvaratti', image: 'assets/images/products-img/mizhukuvaratti.JPG', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 146, name: 'Kudampuli Curry', image: 'assets/images/products-img/kudampulicurry.jpeg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 147, name: 'Soya Fry', image: 'assets/images/products-img/soyafry.jpg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 148, name: 'Chammanthi', image: 'assets/images/products-img/chammanthi.webp', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 149, name: 'Kallan', image: 'assets/images/products-img/kallan.jpg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 150, name: 'Olan', image: 'assets/images/products-img/olan.jpg', category: 'Catering', subcategory: 'Nadan Sadhya' },
-  { id: 151, name: 'Mulaku Kondattom', image: 'assets/images/products-img/Screenshot (713).png', category: 'Catering', subcategory: 'Nadan Sadhya' },
-  { id: 152, name: 'Sarkkara Varatti', image: 'assets/images/products-img/Screenshot (714).png', category: 'Catering', subcategory: 'Nadan Sadhya' },
-  { id: 153, name: 'Chips', image: 'assets/images/products-img/Screenshot (715).png', category: 'Catering', subcategory: 'Nadan Sadhya' },
-  { id: 154, name: 'Njalipoovan Pazham', image: 'assets/images/products-img/Screenshot (716).png', category: 'Catering', subcategory: 'Nadan Sadhya' },
+  { id: 151, name: 'Mulaku Kondattom', image: 'assets/images/products-img/MulakuKondattom.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
+  { id: 152, name: 'Sarkkara Varatti', image: 'assets/images/products-img/SarkkaraVaratti.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
+  { id: 153, name: 'Chips', image: 'assets/images/products-img/Chips.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
+  { id: 154, name: 'Njalipoovan Pazham', image: 'assets/images/products-img/NjalipoovanPazham.png', category: 'Catering', subcategory: 'Nadan Sadhya' },
   { id: 155, name: 'Nadan Vazhayila', image: 'assets/images/products-img/nadanvazhayila.jpeg', category: 'Catering', subcategory: 'Nadan Sadhya' },
   // Christian meals
   { id: 156, name: 'Choru', image: 'assets/images/products-img/kutharichoru.png', category: 'Catering', subcategory: 'Christian Meals' },
@@ -213,10 +213,10 @@ export const PRODUCT_LIST: Product[] = [
   
    //pudding
   { id: 181, name: 'Mango Pudding', image: 'assets/images/products-img/Mango-Pudding.jpg', category: 'Catering', subcategory: 'Pudding' },
-  { id: 182, name: 'Mango Cheese Pudding', image: 'assets/images/products-img/Screenshot (717).png', category: 'Catering', subcategory: 'Pudding' },
+  { id: 182, name: 'Mango Cheese Pudding', image: 'assets/images/products-img/MangoCheesePudding.png', category: 'Catering', subcategory: 'Pudding' },
   { id: 183, name: 'Fruits Truffle', image: 'assets/images/products-img/fruitstruffle.jpg', category: 'Catering', subcategory: 'Pudding' },
   { id: 184, name: 'Pineapple Pudding', image: 'assets/images/products-img/pineapple.jpg', category: 'Catering', subcategory: 'Pudding' },
-  { id: 185, name: 'Royal Dutch', image: 'assets/images/products-img/Screenshot (718).png', category: 'Catering', subcategory: 'Pudding' },
+  { id: 185, name: 'Royal Dutch', image: 'assets/images/products-img/RoyalDutch.png', category: 'Catering', subcategory: 'Pudding' },
   { id: 186, name: 'Tiramisu', image: 'assets/images/products-img/tiramisu.jpg', category: 'Catering', subcategory: 'Pudding' },
   { id: 187, name: 'Tender Coconut', image: 'assets/images/products-img/tendercoconutpudding.webp', category: 'Catering', subcategory: 'Pudding' },
   { id: 188, name: 'Gulab Jamun', image: 'assets/images/products-img/gulabjamun.jpg', category: 'Catering', subcategory: 'Pudding' },
@@ -238,7 +238,7 @@ export const PRODUCT_LIST: Product[] = [
    
   //Decoration Category
  
-  { id: 201, name: 'Stage Decoration', image: 'assets/images/decoration/Screenshot (719).png', category: 'Decoration', subcategory: 'Stage Decoration' },
+  { id: 201, name: 'Stage Decoration', image: 'assets/images/decoration/StageDecoration.png', category: 'Decoration', subcategory: 'Stage Decoration' },
   { id: 202, name: 'Mandap', image: 'assets/images/decoration/mandap-decoration.jpg', category: 'Decoration', subcategory: 'Mandap Setup' },
   { id: 203, name: 'Pandal', image: 'assets/images/decoration/pandal.jpg', category: 'Decoration', subcategory: 'Pandal Setup' },
   { id: 204, name: 'Flower Arrangements', image: 'assets/images/decoration/flw.jpg', category: 'Decoration', subcategory: 'Flower Arrangements' },
@@ -281,7 +281,7 @@ export const PRODUCT_LIST: Product[] = [
   { id: 232, name: 'Luxury Car', image: 'assets/images/decoration/car.jpg', category: 'Event Enhancers', subcategory: 'Car' },
 
   //last add one
-  { id: 233, name: 'Prawns Stew', image: 'assets/images/products-img/prawns stew.JPG', category: 'Catering', subcategory: 'Fish Items' },
+  { id: 233, name: 'Prawns Stew', image: 'assets/images/products-img/prawnsstew.JPG', category: 'Catering', subcategory: 'Fish Items' },
   { id: 234, name: 'Beef Stew', image: 'assets/images/products-img/beef-stew.jpg', category: 'Catering', subcategory: 'Beef' },
   { id: 235, name: 'Mutton Fry', image: 'assets/images/products-img/mutton-fry.jpg', category: 'Catering', subcategory: 'Mutton' },
 ];

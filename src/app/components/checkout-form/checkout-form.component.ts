@@ -55,6 +55,7 @@ export class CheckoutFormComponent {
     this.orderForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      phoneNumber: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       place: ['', Validators.required],
       eventType: ['', Validators.required],
       eventDate: ['', Validators.required],

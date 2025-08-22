@@ -21,8 +21,8 @@ export class EmailService {
         from_name: order.name,
         message: orderDetails,
         reply_to: order.email,
-        email: this.replyTo
-
+        email: this.replyTo,
+        phone: order.phoneNumber
       };
   
       return emailjs.send(this.serviceID, this.templateID, templateParams, this.userID);
@@ -37,6 +37,7 @@ export class EmailService {
   
       message += '\n';
       message += `Name: ${order.name}\n`;
+      message += `Phone: ${order.phoneNumber}\n`;
       message += `Place: ${order.place}\n`;
       message += `Event: ${order.eventType}\n`;
       message += `Date: ${order.eventDate}\n`;

@@ -6,6 +6,8 @@ export const environment = {
     emailTemplateID: 'template_4gesrev',
     emailUserID: 'FjfYajRR1_Udl77Tn',
     replyToEmail: 'hello.doreaevents@gmail.com'
+
+    
     
   };
  
